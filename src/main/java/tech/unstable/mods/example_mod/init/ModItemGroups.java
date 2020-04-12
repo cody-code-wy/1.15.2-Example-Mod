@@ -7,7 +7,7 @@ import tech.unstable.mods.example_mod.ExampleMod;
 import java.util.function.Supplier;
 
 public class ModItemGroups {
-    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(ExampleMod.MODID, () -> new ItemStack(ModItems.EXAMPLE_ITEM));
+    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(ExampleMod.MODID, () -> new ItemStack(ModItems.EXAMPLE_ITEM.get()));
     private static class ModItemGroup extends ItemGroup {
 
         private final Supplier<ItemStack> iconSupplier;
