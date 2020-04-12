@@ -18,14 +18,6 @@ public class ModEventSubscriber {
         );
     }
 
-    @SubscribeEvent
-    public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(
-                setup(new Block(Block.Properties.create(Material.ROCK)
-                        .hardnessAndResistance(3f, 3f)), "example_ore")
-        );
-    }
-
     public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final String name) {
         return setup(entry, new ResourceLocation(ExampleMod.MODID, name));
     }
