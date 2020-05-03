@@ -17,7 +17,8 @@ public class ModEventSubscriber {
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-            setup(new BlockItem(ModBlocks.EXAMPLE_ORE.get(), new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), ModBlocks.EXAMPLE_ORE.get().getRegistryName())
+            setup(new BlockItem(ModBlocks.EXAMPLE_ORE.get(), new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), ModBlocks.EXAMPLE_ORE.get().getRegistryName()),
+            setup(new BlockItem(ModBlocks.GEM_ORE.get(), new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), ModBlocks.GEM_ORE.get().getRegistryName())
         );
     }
 
