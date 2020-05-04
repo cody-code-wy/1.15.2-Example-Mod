@@ -1,4 +1,6 @@
 {
   "item.example_mod.example_item": "Example Item",
-  "itemGroup.example_mod": "Example Mod"
+  "itemGroup.example_mod": "Example Mod",
+  "block.example_mod.example_ore": "Exmaple Ore",
+  "block.example_mod.gem_ore": "Gem Ore"
 }
